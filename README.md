@@ -15,7 +15,7 @@ It then infers regression coefficients from the post-selected ancilla state repr
 
 ---
 
-## ⚙️ Main Components
+## Main Components
 
 ### 1. **Feature Standardization**
 
@@ -51,7 +51,7 @@ Plots both classical and quantum regression results:
 * **2D:** 3D planes representing classical and quantum fits.
 
 
-## 🧩 Requirements
+## Requirements
 
 * Python 
 * Qiskit 
@@ -60,7 +60,7 @@ Plots both classical and quantum regression results:
 * Pandas
 * qiskit_aer
 
-## 📚 References
+## References
 
 * Harrow, A. W., Hassidim, A., & Lloyd, S. (2009). *Quantum algorithm for linear systems of equations*. Nature, 460(7252), 56–60.
 * Schuld, M., Sinayskiy, I., & Petruccione, F. (2016). *Prediction by linear regression on a quantum computer*. Phys. Rev. A 94, 022342.
