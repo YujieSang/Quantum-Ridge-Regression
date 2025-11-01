@@ -1,6 +1,6 @@
-# Adaptive HHL (QPE-based) Linear Regression — Simulator Version
+# Quantum Ridge Regression (via HHL and QPE)
 
-This project implements a **quantum linear regression solver** using the **Harrow–Hassidim–Lloyd (HHL)** algorithm with **Quantum Phase Estimation (QPE)**, running fully on a simulator (Qiskit Aer). It reproduces the behavior of ridge regression by solving the normal equations ( (X^T X + \lambda I) \beta = X^T y ) quantum-mechanically.
+This project implements a **quantum ridge regression solver** using the **Harrow–Hassidim–Lloyd (HHL)** algorithm with **Quantum Phase Estimation (QPE)**, running fully on a simulator (Qiskit Aer). It reproduces the behavior of ridge regression by solving the normal equations ( (X^T X + \lambda I) \beta = X^T y ) quantum-mechanically.
 
 ---
 
@@ -13,8 +13,9 @@ You will need following packages for python.
 * Pandas
 * qiskit_aer
 
- If you are using your own csv file, put it under same folder and open the folder, if not the program will generate a sample dataset and you can adjust parameter of the generation process near the end of the code.  
- Change feature_cols=['std_ion','nvalence_avg'], y_col='formation_energy' to match your own csv file, or to feature_cols=['a','b'], y_col='y' to use generated dataset.
+Change feature_cols=['std_ion','nvalence_avg'], y_col='formation_energy' to match your own csv file, or to feature_cols=['a','b'], y_col='y' to use generated dataset. If you are using your own csv file, put it under same folder and open the folder, if not the program will generate a sample dataset and you can adjust parameter of the generation process near the end of the code.  
+
+Since this runs on simulator, we read the statevector directly. If you want to run on real quantum computer, you will need to implement a full tomography at the end to estimate the statevector postselection.
 
 ## Core Idea
 
