@@ -4,6 +4,18 @@ This project implements a **quantum linear regression solver** using the **Harro
 
 ---
 
+## How to run
+
+You will need following packages for python.
+* Qiskit 
+* Matplotlib
+* NumPy
+* Pandas
+* qiskit_aer
+
+* If you are using your own csv file, put it under same folder and open the folder, if not the program will generate a sample dataset and you can ajust parameter of the generation process near the end of the code.  
+* Change feature_cols=['std_ion','nvalence_avg'], y_col='formation_energy' to match your own csv file, or to feature_cols=['a','b'], y_col='y' to use generated dataset.
+
 ## Core Idea
 
 The HHL algorithm uses a quantum circuit to prepare a state proportional to the solution ( |x\rangle ) of a linear system ( A|x\rangle = |b\rangle ). Here:
@@ -51,14 +63,7 @@ Plots both classical and quantum regression results:
 * **2D:** 3D planes representing classical and quantum fits.
 
 
-## Requirements
 
-* Python 
-* Qiskit 
-* Matplotlib
-* NumPy
-* Pandas
-* qiskit_aer
 
 ## References
 
