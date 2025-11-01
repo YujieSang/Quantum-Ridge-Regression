@@ -13,7 +13,7 @@ You will need following packages for python.
 * Pandas
 * qiskit_aer
 
- If you are using your own csv file, put it under same folder and open the folder, if not the program will generate a sample dataset and you can ajust parameter of the generation process near the end of the code.  
+ If you are using your own csv file, put it under same folder and open the folder, if not the program will generate a sample dataset and you can adjust parameter of the generation process near the end of the code.  
  Change feature_cols=['std_ion','nvalence_avg'], y_col='formation_energy' to match your own csv file, or to feature_cols=['a','b'], y_col='y' to use generated dataset.
 
 ## Core Idea
